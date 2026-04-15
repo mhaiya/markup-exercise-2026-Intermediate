@@ -1,6 +1,6 @@
 
 /*共通css*/
-@media (max-width: 1512px) {
+
     :root {
     --font-serif: 'Cormorant Garamond', serif;
     --font-sans: 'Noto Sans JP', sans-serif;
@@ -44,7 +44,8 @@
     }
 
     h2 {
-        letter-spacing: .12em;
+        font-size: 24px;
+        font-weight: 700;
         text-align: center;
         margin-bottom: 48px;
     }
@@ -83,11 +84,12 @@
     .profile-img { 
         /*プロファイル画像*/
         background-image: url(img/mainvisual-pc.png);
-        margin-top: 56px; 
-        height: 42vw; 
+        margin-top: 160px; 
+        height: 320px; 
         max-height: 580px; 
-        min-height: 200px; 
-        overflow: hidden; 
+        width: 100%;
+        background-size: cover;
+        background-position: center;
     }
     .profile-img img { 
         width: 100%; 
@@ -104,7 +106,7 @@
     .about-body { 
         display: flex; 
         gap: 24px; 
-        align-items: flex-start; 
+        align-items: center; 
     }
     .about-body > img { 
         width: 160px; 
@@ -112,7 +114,7 @@
         border-radius: 50%; 
         object-fit: cover; 
         flex-shrink: 0; 
-        margin-left: 16px;
+        margin-left: 0px;
     }
     .about-body h3 { 
         font-size: 18px; 
@@ -120,8 +122,8 @@
         margin-bottom: 24px; 
     }
     .about-body ul { 
-        margin-bottom: 24px; 
-
+        margin-bottom: 24px;
+        font-weight: 400; 
     }
     .about-body li { 
         font-size: 13px; 
@@ -130,7 +132,9 @@
     }
     .about-body p  { 
         font-size: 13px; 
+        font-weight: 400; 
         color: #000000;
+        line-height: 1.4;
         
     }
 
@@ -167,35 +171,44 @@
     /*コンタクト*/
     form { 
         margin: 0 auto; 
+        width: fit-content;
     }
     form > div {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        padding: 16px 0;
+        padding: 12px 0;
     }
     input {
         width: 638px;
         height: 47px;
-        margin: 0 0 0 auto;
-        border-color: 1px solid var(--border);
+        /*margin: 0 0 0 auto;*/
+        border: 1px solid var(--border);
+        border-radius: 0;
+        outline: none;
+        appearance: none;
+        -webkit-appearance: none;
+        background: #fff;
+        padding: 0 16px;
     }
     .contact label{
-        text-align: left;
-        margin: 0 0 0 auto;   
+        text-align: right;
+        min-width: 80px;
+        margin: 0 26px 0 0;   
+        
     }
 
     button {
-    display: block;
-    margin: 16px auto 0;
-    width: 160px;
-    height: 33px;
-    background-color: #393E46;
-    color: #fff;
-    border: none;
-    font: 300 13px/1 var(--font-sans);
-    letter-spacing: 1em;
-    cursor: pointer;
-    
+        display: block;
+        margin: 16px auto 0;
+        width: 160px;
+        height: 33px;
+        background-color: #393E46;
+        color: #fff;
+        border: none;
+        font: 300 13px/1 var(--font-sans);
+        cursor: pointer;
+        text-align: center;
     }
     /*フッター*/
     footer {
@@ -207,39 +220,96 @@
         font-family: Arial;
         letter-spacing: 0.05em;
         margin-top: 128px;
+        font-size: 13px;
+        font-weight: 700;
     }
-}
-/* Responsive — 768px　ー　タブレット 
-@media (max-width: 768px) {
-  :root { --pad: 24px; }
-  .grid { grid-template-columns: repeat(2, 1fr); }
-  .about-body img { display: none; }
-  section:not(.hero) { padding: 60px 0; }
-}
-*/
+
+
+
+
+
+
 
 /* Responsive — 480px　ー　スマホ */
 @media (max-width: 480px) {
-  :root { --pad: 16px; }
-  nav ul { gap: 14px; }
-  nav a { font-size: 11px; }
+    :root { --pad: 16px; }
+    nav ul { gap: 14px; }
+    nav a { font-size: 11px; }
 
-  .profile-img {  
-    display: none;
-    background-image: url(img/mainvisual-sp.png);
-    width: 100%;
-    height:  640px;
-}
-  .about-body img { display: none; }
-  /*section:not(.hero) { padding: 48px 0; }*/
-  h2 { font-size: 24px; margin-bottom: 32px; }
-  .about-body { flex-direction: column; align-items: center; text-align: center; }
-  .about-body li { text-align: left; }
-  .about-body p { text-align: left; }
-  .grid { grid-template-columns: 1fr; }
-  .grid img { aspect-ratio: 16/9; }
-  #news li { flex-direction: column; gap: 4px; }
-  form > div { gap: 6px; width: 368px; height: 47px; margin: 0 0 0 auto;}
-  label { min-width: auto; }
-  input { width: 100%; }
+    header {
+        height: 192px;
+        padding: 62px 0;
+        position: static;
+    }
+    .instagram { 
+        display: none;
+    }
+
+    .profile-img {
+        background-image: url(img/mainvisual-sp.png);
+        width: 100%;
+        height:  640px;
+        margin-top: 0;
+    }
+    header .inner {
+        flex-direction: column;
+        gap: 12px;
+    }
+    nav ul{
+        gap: 16px;
+        justify-content: center;
+    }
+    
+    h2 { 
+        font-size: 24px; 
+        margin-bottom: 32px; 
+    }
+    .about-body { 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        /*margin-top: 64px;*/
+    }
+    .about-body img { 
+        display: none; 
+    }
+    .about-body h3 { 
+        text-align: left; 
+    }
+    .about-body li { 
+        text-align: left; 
+    }
+    .about-body p { 
+        text-align: left; 
+    }
+    .grid { 
+        grid-template-columns: 1fr;
+    }
+    .grid img { 
+        aspect-ratio: 16/9; 
+    }
+    .news li { 
+        flex-direction: 
+        column; gap: 4px; 
+    }
+
+    form {
+        width: 100%; 
+
+    }
+    form > div { 
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;  
+        height: auto; 
+        /*margin-bottom: 16px;*/
+
+    }
+    label { 
+        min-width: auto; 
+    }
+    input { 
+        width: 100%; 
+        max-width: 368px;
+    }
 }
