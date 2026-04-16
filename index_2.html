@@ -10,20 +10,23 @@
         href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
         />
         <link rel="stylesheet" href="style_2.css">
+    
     </head>
     
     <body>
         <header>
             <div class="inner">
-                <img class="logo" src="img/logo (1).png" href="#">
+                <img class="logo" src="img/logo (1).png" >
                 <nav>
                     <ul>
-                        <li>About</li>
-                        <li>Works</li>
-                        <li>News</li>
-                        <li>Contact</li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li>
-                            <img class="instagram" src="img/icon-instagram.png">
+                            <a href="https://www.instagram.com/bulletgroup_daily/"target="_blank" rel="noopener noreferrer">
+                                <img class="instagram" src="img/icon-instagram.png">
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -59,12 +62,12 @@
                 <div class="inner">
                     <h2>Works</h2>
                     <div class="grid">
-                        <img src="img/works1.png" alt="">
-                        <img src="img/works2.png" alt="">
-                        <img src="img/works3.png" alt="">
-                        <img src="img/works4.png" alt="">
-                        <img src="img/works5.png" alt="">
-                        <img src="img/works6.png" alt="">
+                        <img src="img/works1.png" alt="Works 1">
+                        <img src="img/works2.png" alt="Works 2">
+                        <img src="img/works3.png" alt="Works 3">
+                        <img src="img/works4.png" alt="Works 4">
+                        <img src="img/works5.png" alt="Works 5">
+                        <img src="img/works6.png" alt="Works 6">
                     </div>
                 </div>
             </section>
@@ -89,10 +92,10 @@
                     <div class="contact">
                         <h2>Contact</h2>
                         <form>
-                            <div><label>NAME</label><input type="text" name="name"></div>
-                            <div><label>E-mail</label><input type="email" name="email"></div>
-                            <div><label>MESSAGE</label><input type="text" name="message"></div>
-                            <button type="button">送信</button>
+                            <div><label for="name">NAME</label><input type="text" id="name" name="name"></div>
+                            <div><label for="email">E-mail</label><input type="email" id="email" name="email"></div>
+                            <div><label for="message">MESSAGE</label><input type="text" id="message" name="message"></div>
+                            <button type="submit">送信</button>
                         </form>
                     </div>
                 </div>
