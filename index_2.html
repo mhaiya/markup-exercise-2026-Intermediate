@@ -10,15 +10,15 @@
         href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
         />
         <link rel="stylesheet" href="style_2.css">
-    
+
     </head>
-    
+
     <body>
-        <header>
+        <header class="header">
             <div class="inner">
                 <img class="logo" src="img/logo (1).png" >
                 <nav>
-                    <ul>
+                    <ul class="nav-list">
                         <li><a href="#about">About</a></li>
                         <li><a href="#works">Works</a></li>
                         <li><a href="#news">News</a></li>
@@ -35,74 +35,76 @@
 
         <main>
             <section class="profile-img">
-                
+
             </section>
 
-            <section id="about">
+            <section id="about" class="content-section">
                 <div class="inner">
-                    <h2>About</h2>
+                    <h2 class="section-title">About</h2>
                     <div class="about-body">
-                        <img src="img/about.png" alt="profile">
+                        <img class="about-img" src="img/about.png" alt="profile">
                         <div>
-                            <h3>Xxxxx</h3>
-                            <ul>
-                                <li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
-                                <li>tel: 000-0000-0000</li>
-                                <li>UTT WWW.AAAAAAS</li>
-                                <li>mail: xxx@xxxxxx.jp</li>
-                            </ul>
-                            <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテ<br>
+                            <h3 class="about-name">Xxxxx</h3>
+                            <address class="about-address">
+                                <ul class="about-list">
+                                    <li class="about-item">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+                                    <li class="about-item">tel: 000-0000-0000</li>
+                                    <li class="about-item">UTT WWW.AAAAAAS</li>
+                                    <li class="about-item">mail: xxx@xxxxxx.jp</li>
+                                </ul>
+                            </address>
+                            <p class="about-text">プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテ<br>
                             キストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="works">
+            <section id="works" class="content-section">
                 <div class="inner">
-                    <h2>Works</h2>
+                    <h2 class="section-title">Works</h2>
                     <div class="grid">
-                        <img src="img/works1.png" alt="Works 1">
-                        <img src="img/works2.png" alt="Works 2">
-                        <img src="img/works3.png" alt="Works 3">
-                        <img src="img/works4.png" alt="Works 4">
-                        <img src="img/works5.png" alt="Works 5">
-                        <img src="img/works6.png" alt="Works 6">
+                        <img class="grid-img" src="img/works1.png" alt="Works 1">
+                        <img class="grid-img" src="img/works2.png" alt="Works 2">
+                        <img class="grid-img" src="img/works3.png" alt="Works 3">
+                        <img class="grid-img" src="img/works4.png" alt="Works 4">
+                        <img class="grid-img" src="img/works5.png" alt="Works 5">
+                        <img class="grid-img" src="img/works6.png" alt="Works 6">
                     </div>
                 </div>
             </section>
 
-            <section id="news">
+            <section id="news" class="content-section">
                 <div class="inner">
                     <div class="news">
-                        <h2>News</h2>
-                        <ul>
-                            <li><span>2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
-                            <li><span>2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
-                            <li><span>2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
-                            <li><span>2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
-                            <li><span>2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                        <h2 class="section-title">News</h2>
+                        <ul class="news-list">
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section id="contact">
+            <section id="contact" class="content-section">
                 <div class="inner">
                     <div class="contact">
-                        <h2>Contact</h2>
-                        <form>
-                            <div><label for="name">NAME</label><input type="text" id="name" name="name"></div>
-                            <div><label for="email">E-mail</label><input type="email" id="email" name="email"></div>
-                            <div><label for="message">MESSAGE</label><input type="text" id="message" name="message"></div>
-                            <button type="submit">送信</button>
+                        <h2 class="section-title">Contact</h2>
+                        <form class="contact-form">
+                            <div class="form-group"><label class="form-label" for="name">NAME</label><input class="form-input" type="text" id="name" name="name"></div>
+                            <div class="form-group"><label class="form-label" for="email">E-mail</label><input class="form-input" type="email" id="email" name="email"></div>
+                            <div class="form-group"><label class="form-label" for="message">MESSAGE</label><textarea class="form-textarea" id="message" name="message"></textarea></div>
+                            <button class="submit-btn" type="submit">送信</button>
                         </form>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer>
+        <footer class="footer">
             <p>&copy; 2024 Bullet Group</p>
         </footer>
     </body>
