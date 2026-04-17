@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML中級課題</title>
+        <!-- reset.css destyle -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+        />
+        <link rel="stylesheet" href="style_2.css">
+
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="inner">
+                <img class="logo" src="img/logo.png" >
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="https://www.instagram.com/bulletgroup_daily/"target="_blank" rel="noopener noreferrer">
+                                <img class="instagram" src="img/icon-instagram.png">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="profile-img">
+
+            </section>
+
+            <section id="about" class="content-section">
+                <div class="inner">
+                    <h2 class="section-title">About</h2>
+                    <div class="about-body">
+                        <img class="about-img" src="img/about.png" alt="profile">
+                        <div>
+                            <h3 class="about-name">Xxxxx</h3>
+                            <address class="about-address">
+                                <ul class="about-list">
+                                    <li class="about-item">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+                                    <li class="about-item">tel: 000-0000-0000</li>
+                                    <li class="about-item">UTT WWW.AAAAAAS</li>
+                                    <li class="about-item">mail: xxx@xxxxxx.jp</li>
+                                </ul>
+                            </address>
+                            <p class="about-text">プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテ<br>
+                            キストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="works" class="content-section">
+                <div class="inner">
+                    <h2 class="section-title">Works</h2>
+                    <div class="grid">
+                        <img class="grid-img" src="img/works1.png" alt="Works 1">
+                        <img class="grid-img" src="img/works2.png" alt="Works 2">
+                        <img class="grid-img" src="img/works3.png" alt="Works 3">
+                        <img class="grid-img" src="img/works4.png" alt="Works 4">
+                        <img class="grid-img" src="img/works5.png" alt="Works 5">
+                        <img class="grid-img" src="img/works6.png" alt="Works 6">
+                    </div>
+                </div>
+            </section>
+
+            <section id="news" class="content-section">
+                <div class="inner">
+                    <div class="news">
+                        <h2 class="section-title">News</h2>
+                        <ul class="news-list">
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                            <li class="news-item"><span class="news-date">2020.XX.XX</span>デザイン雑誌「〇〇」に掲載されました。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <div class="inner">
+                    <div class="contact">
+                        <h2 class="section-title">Contact</h2>
+                        <form class="contact-form">
+                            <div class="form-group"><label class="form-label" for="name">NAME</label><input class="form-input" type="text" id="name" name="name"></div>
+                            <div class="form-group"><label class="form-label" for="email">E-mail</label><input class="form-input" type="email" id="email" name="email"></div>
+                            <div class="form-group"><label class="form-label" for="message">MESSAGE</label><textarea class="form-textarea" id="message" name="message"></textarea></div>
+                            <button class="submit-btn" type="submit">送信</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Bullet Group</p>
+        </footer>
+    </body>
+</html>
